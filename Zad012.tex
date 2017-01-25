@@ -1,0 +1,48 @@
+\section*{Zadanie 12.}
+\begin{task}
+W próżni rozchodzi się w kierunku wersora $k$ o składowych $\big{(}\cfrac{1}{2},0,\cfrac{\sqrt{3}}{2}\big{)}$ fala płaska o polaryzacji kołowej (lewoskrętnej) i częstotliwości 30 MHz. Stwierdzono, że w punkcie (0,0,0) amplituda zespolona składowej pola magnetycznego skierowanej w kierunku osi $Oy$ wynosi $H_{y}=10j\ \big{[}\cfrac{A}{m}\big{]}.\\$
+Podać pełne wyrażenie na rzeczywistą zależność od czasu pola elektrycznego w punkcie (1,1,1)[m].\\
+Uwaga: Podać systematycznie w punktach drogę prowadzącą do rozwiązania.\\
+\end{task}
+
+\begin{solution}
+
+
+$$\vec{k}=\big{[}\cfrac{1}{2};0;\cfrac{\sqrt{3}}{2}\big{]} \ \ \ f = 30 MHz \ \ \ H_{y}(0,0,0)=10j$$
+Z własności rozchodzenia się fali płaskiej wynika, że: $\vec{k}\dot\vec{H}=0$, więc:
+$$\vec{k}\circ\vec{H}=\cfrac{1}{2}H_{x}+\cfrac{\sqrt{3}}{2}H_{z}=0 \ \ \implies \ \ H_{x}=-\sqrt{3}H_{z}$$
+Wiemy z polecenia, że polaryzacja fali ma być kołowa, co mówi nam, że składowe pola muszą być przesunięte o $\cfrac{\pi}{2}$ względem siebie. Jeżeli w punkcjie (0,0,0) mamy amplitudę urojoną, to druga składowa musi być rzeczywista, a więc pole $H$ można zapisać jako: $\vec{H}=\vec{H_{1}}+\vec{H_{2}}$. Z informacji, że mamy falę spolaryzowaną kołowo wnioskujemy, że amplitudy obu składowych są sobie równe:
+$$|\vec{H_{1}}|=|\vec{H_{2}}| \ \ \stackrel{\substack{\vec{H_{1}}=10j \\ \vec{H_{2}}=H_{x}+H_{z}} }{\implies} \ \ 10=\sqrt{H_{x}^{2}+H_{z}^{2}}=\sqrt{3H_{z}^{2}+H_{z}^{2}}=2H_{z}$$
+$$H_{z}=\stackrel{+}{-}5\ \ \ H_{x}=\stackrel{+}{-}5\sqrt{3}$$
+Jeżeli polaryzacja ma być lewoskrętna, musi być spełniony warunek:\\
+\begin{center} $ \vec{H_{2}} \times \vec{H_{1}} \parallel \vec{k} $, więc sprawdzamy:\\
+\end{center}
+
+\begin{itemize}
+\item $\vec{H_{2}^{'}}\times\vec{H_{1}} = \begin{vmatrix}
+					                    \vec{i_{x}}&\vec{i_{y}}&\vec{i_{z}}\\
+					                    -5\sqrt{3}&0&5\\
+					                    0&10&0\end{vmatrix} = -50\vec{i_{x}} -50\sqrt{3}\vec{i_{z}} \ \ \ \not\parallel \vec{k}$
+					                    
+\item $\vec{H_{2}^{''}}\times\vec{H_{1}} = \begin{vmatrix}
+					                    \vec{i_{x}}&\vec{i_{y}}&\vec{i_{z}}\\
+					                    5\sqrt{3}&0&-5\\
+					                    0&10&0\end{vmatrix} = 50\vec{i_{x}} + 50\sqrt{3}\vec{i_{z}} \ \ \ \ \parallel \vec{k}$
+
+\end{itemize}
+
+Zatem ogólne wyrażenie na pole $\vec{H}$ w dowolnym punkcie wynosi:
+$$ \vec{H_{re}} = \big{(} 5\sqrt{3}\vec{i_{x}}+5\vec{i_{z}}  \big{)}\cos{(\omega t - \beta \vec{k}\cdot\vec{r})} + 10\vec{i_{y}}\cos{(\omega t - \beta \vec{k}\cdot\vec{r}+\cfrac{\pi}{2}}) $$ $$ 
+\vec{H_{re}} =\big{(}  5\sqrt{3}\vec{i_{x}}+5\vec{i_{z}} \big{)}\cos{(\omega t - \beta(\cfrac{1}{2}\vec{i_{x}}+\cfrac{\sqrt{3}}{2}\vec{i_{z}})\cdot (x\vec{i_{x}}+y\vec{i_{y}}+z\vec{i_{z}}) )} +$$ $$+ 10\vec{i_{y}}\cos{(\omega t - \beta(\cfrac{1}{2}\vec{i_{x}}+\cfrac{\sqrt{3}}{2}\vec{i_{z}})\cdot (x\vec{i_{x}}+y\vec{i_{y}}+z\vec{i_{z}})+\cfrac{\pi}{2} )}$$
+
+Pole $\vec{E}$ obliczamy z własności fali płaskiej:
+$$\vec{E}=Z(\vec{H}\times\vec{k})=Z H_{0} e^{j(\omega t - \beta\vec{k}\cdot\vec{r})}\begin{vmatrix}
+					\vec{i_{x}}&\vec{i_{y}}&\vec{i_{z}}\\
+				    5\sqrt{3}&10j&5\\
+					\cfrac{1}{2}&0&\cfrac{\sqrt{3}}{2}\end{vmatrix}=Z H_{0} e^{j(\omega t           -        \beta\vec{k}\cdot\vec{r})}\big{(}5\sqrt{3}j\cdot\vec{i_{x}}-5j\cdot\vec{i_{z}}  \big{)}$$
+Ogólne wyrażenie na pole $\vec{E}$ w dowolnej chwili i czasie wynosi:
+$$\vec{E_{re}}= |Z| H_{0} \sin{(\omega t-\beta\vec{k}\cdot\vec{r}+Arg\ Z)}\big{(}-5\sqrt{3}\cdot\vec{i_{x}}+5\cdot\vec{i_{z}}  \big{)}$$
+Zaś w punkcie (1,1,1):
+$$ \vec{E}(1,1,1) = |Z| H_{0} \sin{(\omega t-\beta(\cfrac{1}{2}\vec{i_{x}}+\cfrac{\sqrt{3}}{2}\vec{i_{z}})\cdot (1\cdot\vec{i_{x}}+1\cdot\vec{i_{y}}+1\cdot\vec{i_{z}})+Arg\ Z)}\big{(}-5\sqrt{3}\cdot\vec{i_{x}}+5\cdot\vec{i_{z}}  \big{)}= $$
+$\stackrel{\substack{Arg\ Z = 0 \\ \beta = \cfrac{\pi}{5}}}{=} 120\pi \cdot 10 \sin{\big{(}6\cdot 10^{7} t-\cfrac{\pi(1+\sqrt{3})}{10}\big{)}}\big{(}-5\sqrt{3}\cdot\vec{i_{x}}+5\cdot\vec{i_{z}}  \big{)}  $
+\end{solution}

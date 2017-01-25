@@ -1,0 +1,29 @@
+\section*{Zadanie 8.}
+\begin{task}
+Zdefiniować pojęcie dobroci rezonatora. Jaki jest sens fizyczny dobroci? Jakie znaczenie ma to pojęcie przy rozważaniu własności odwodów w dziedzinie częstotliwości i dziedzinie czasu? Do czego są wykorzystywane rezonatory? Jakie zalety ma zastosowanie rezonatorów dielektrycznych w miejsce rezonatorów wnękowych?\\
+\end{task}
+
+\begin{solution}
+Dobroć jest współczynnikiem określającym stosunek średniej energii zgromadzonej w rezonatorze do średniej energii traconej w trakcie jednego okresu. //
+Jest ona jednym z najważniejszych parametrów charakteryzujących właściwości rezonatora, wyraża się wzorem:
+$$Q=2\pi\cfrac{\overline{W}}{\overline{P_{q}}T}$$
+$\overline{W}$ - średnia energia magazynowana w rezonatorze\\
+$\overline{P_{q}}$ - średnia moc strat w rezonatorze\\
+$T$ - okres drgań\\
+
+Warunek wystąpienia tlumienia aperiodycznego krytycznego jest równoważny zależności $Q=\cfrac{1}{2}$. Jeżeli dobroć rezonatora jest więszka niż $\cfrac{1}{2}$ to w rezonatorze jest możliwe wystąpienie oscylacji z pulsacją:
+$$\omega_{v}^{'}=\omega\sqrt{1-\cfrac{1}{4Q^{2}}}$$
+W rezonatorach o dużej dobroci pulsacja drgań własnych rezonatora nieznacznie różni się od pulsacji drgań własnych rezonatora bezstratnego $\omega_{v}$ dlatego często w zastosowaniach technicznych przyjmujemy, że: $\omega_{v}^{'}=\omega_{v}$. Oscylacje w rezonatorze są tłumione proporcjonalnie do finkcji $e^{-dt}$, gdzie $d$ jest współczynnikiem tłumienia wyrażającym się zależnością $d=\cfrac{\omega_{v}^{'}}{2Q}$. Jeżeli dobroć rezonatora jest nie większa niż $\cfrac{1}{2}$ to pole będzie tłumione bez oscylacji.\\
+Rezonatory zbudowane z odcinków prowadnic falowych są najbardziej rozpowszechnione głównie dlatego, że można łatwo określić w nich rozkład pola, a więc łatwo można zaprojektować rezonator o zadanych parametrach.\\
+Rezonator z przewodzącą ścianką o kształcie powierzchni kuli ma największą dobroć wśród rezonatorów o przewodzących ściankach, ze względu na optymalny stosunek objętości, w której gromadzi się energia do powierzchni niedoskonale przewodzących ścianek metalowych.\\
+Zalety rezonatorów dielektrycznych względem wnękowych:
+\begin{itemize}
+\item mniejszy rozmiar i ciężar,
+\item możliwość stosowania w różnych strukturach mikrofalowych i łatwy sposób sprzęgania z prowadnicami falowymi,
+\item łatwy w przestrajaniu
+\end{itemize}
+
+
+
+
+\end{solution}
