@@ -1,0 +1,15 @@
+\section*{Zadanie 2.}
+\begin{task}
+Wytłumaczyć jaki zachodzi związek między wirowością i potencjalnością pola. Odnosząc się do tego związku oraz do równań Maxwella, wyjaśnić kiedy można prawidłowo zdefiniować napięcie dla pól stałych i zmiennych w czasie? W jakich warunkach można poprawnie zdefiniować napięcie w linii TEM?\\
+\end{task}
+
+\begin{solution}
+
+\textbf{Wirowość (rotacja)} - jeśli pole jest bezwirowe, posiada potencjał. Każde pole posiadające potencjał jest bezwirowe.
+$$\oint\vec{E}dl=\iint\nabla\times\vec{E}d\vec{s}=0 \ \ \ \ \ \ \int\limits_{A}^{B}\vec{E}d\vec{l}=U$$
+\textbf{Pola zmienne w czasie.} Zmiany indukcji magnetycznej powodują powstanie wirowego pola elektrycznego, zaś zmiany indukcji elektrycznej - magnetycznego.\\Pola elektryczne i magnetyczne nie dają się odseparować, dlatego używamy pojęcia pole elektromagnetyczne.\\W przypadku gdy pola są statyczne (rotacja pola E i rotacja pola H są zerowe wgzlędem czasu) żadne z równań Maxwella nie zawiera jednocześnie pól elektrycznego i magnetycznego, pola te są niezależne.
+
+$$\nabla\times\vec{E}=\cfrac{\partial\vec{B}}{\partial t}\ \ \ \ \ \ \ \nabla\times\vec{H}=\vec{J}+\cfrac{\partial\vec{D}}{\partial t}\ \ \ \ \ \ \ \ \ U_{A,B}=\int\limits_{A}^{B}\vec{E}d\vec{l}$$
+
+W przypadku linii TEM pole elektryczne jest bezwirowe w przekroju poprzecznym linii. Jeśli punkty A i B leżą w tej samej płaszczyźnie poprzecznej $z=const$ oraz jeżeli droga po której całkujemy leży w tej płaszczyźnie to rotacja pola E i napięcie między tymi punktami są definicjami poprawnymi i jednostronnymi.
+\end{solution}

@@ -1,0 +1,21 @@
+\section*{Zadanie 38.}
+\begin{task}
+Co to jest efekt naskórkowy i jak zalezy od częstotliwości. Przedyskutować jakiego rzedu grubości pasków metalowych powinny być stosowane w obwodach drukowanych na zakres ok. 3GHz (takich jak np. szybkie układy cyfrowe)?\\
+\end{task}
+
+
+
+\begin{solution}
+Efekt naskórkowy występuje w sytuacji kiedy pole elektromagnetyczne napotyka przewodnik. Na powierzchni przewodnika wytwarza się prąd. W przypadku napotkania przewodnika idealnego (o nieskończonej konduktywności) prąd wytwarza się na nieskończenie cienkiej wartwie na powierzchni przewodnika. Natomiast w realnych przewodnikach mamy do czynienia z głębokością wnikania, wielkością charakteryzującą efekt naskórkowy, zależną od częstotliwości fali i konduktywności przewodnika.
+Głębokość wnikania jest tym większa im mniejsza jest częstotliwość fali elektromagnetycznej, co wynika bezpośredniu ze wzoru na tą wielkość.\\
+\\
+ $\delta = \frac{1}{ \alpha } \\$
+ $\alpha  =  \sqrt{\frac{ \omega    \mu _{0}  \sigma  }{2}} = \sqrt{\frac{ \not{2} \pi f    \mu _{0}  \sigma  }{\not{2}}} = \sqrt {\pi f    \mu _{0}  \sigma}\\$
+\\
+Najczęśćiej by uniknąć strat przy przewodzeniu prądu, stosuje się przewodniki np. mosiężne, pokryte odpowiednio cienką, ze względu na koszty, warstwą (równą głębokości wnikania) materiału o dużej konduktywności (np. srebro, miedź, złoto).
+Przyjmując że przewodnik pokryliśmy srebrem $\sigma_{Ag} = 6 \cdot 10^7 [\frac{S}{m}]$ , dla fali o częstotliwości 3GHz warstwa srebra musi mieć grubość równą: \\
+\\
+ $\begin{cases} \pi \cong 3.14\\f =3\cdot 10^9 Hz \\\mu _{0} = 4 \cdot \pi \cdot 10^{-7}\\ \sigma_{Ag} = 6 \cdot 10^7 [\frac{S}{m}] \end{cases} \\ \\$
+ $\delta_{Ag} = \frac{1}{ \alpha } = \frac{1}{\sqrt {\pi f    \mu _{0}  \sigma}} = \frac{1}{\sqrt {\pi \cdot 3\cdot 10^9 \cdot 4 \cdot \pi \cdot 10^{-7} 6 \cdot 10^7}} = 1.186 \cdot 10^{-6} m \\$
+
+\end{solution}
